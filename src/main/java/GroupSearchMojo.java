@@ -4,16 +4,16 @@ import java.net.URISyntaxException;
 import uk.co.probablyfine.util.AbstractSearchMojo;
 
 /**
- * Search via general input
- * @goal search
+ * Search via groupId
+ * @goal group
  * @requiresProject false
  */
-public class GeneralSearchMojo extends AbstractSearchMojo {
+public class GroupSearchMojo extends AbstractSearchMojo {
 
 	@Override
 	public void setParameters() {
 		try {
-			this.search = search.searchGeneral(query);
+			this.search = search.searchByGroupId(query);
 		} catch (UnsupportedEncodingException e) {
 			getLog().error("Unsupported encoding.");
 			getLog().error(e);
@@ -21,11 +21,7 @@ public class GeneralSearchMojo extends AbstractSearchMojo {
 			getLog().error("Badly formed query url");
 			getLog().error(e);
 		}
-		
+
 	}
 
-	
-
-	
-	
 }

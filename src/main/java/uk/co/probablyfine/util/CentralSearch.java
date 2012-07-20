@@ -87,4 +87,38 @@ public class CentralSearch {
 		return this;
 	}
 	
+	public CentralSearch searchByFullClassName(String query) throws UnsupportedEncodingException, URISyntaxException {
+		
+		this.url = new URI("http",
+				"search.maven.org",
+				"/solrsearch/select",
+				"q=fc:"+URLEncoder.encode(query,"UTF-8")+"&wt=xml",
+				null).toString();
+		
+		return this;
+	}
+	
+	public CentralSearch searchByGroupId(String query) throws UnsupportedEncodingException, URISyntaxException {
+		
+		this.url = new URI("http",
+				"search.maven.org",
+				"/solrsearch/select",
+				"q=g:"+URLEncoder.encode(query,"UTF-8")+"&wt=xml",
+				null).toString();
+		
+		return this;
+	}
+	
+	
+	public CentralSearch searchByArtifactId(String query) throws UnsupportedEncodingException, URISyntaxException {
+		
+		this.url = new URI("http",
+				"search.maven.org",
+				"/solrsearch/select",
+				"q=a:"+URLEncoder.encode(query,"UTF-8")+"&wt=xml",
+				null).toString();
+		
+		return this;
+	}
+	
 }

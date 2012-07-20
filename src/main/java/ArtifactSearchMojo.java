@@ -4,16 +4,16 @@ import java.net.URISyntaxException;
 import uk.co.probablyfine.util.AbstractSearchMojo;
 
 /**
- * Search via general input
- * @goal search
+ * Search via artifactId
+ * @goal artifact
  * @requiresProject false
  */
-public class GeneralSearchMojo extends AbstractSearchMojo {
+public class ArtifactSearchMojo extends AbstractSearchMojo {
 
 	@Override
 	public void setParameters() {
 		try {
-			this.search = search.searchGeneral(query);
+			this.search = search.searchByArtifactId(query);
 		} catch (UnsupportedEncodingException e) {
 			getLog().error("Unsupported encoding.");
 			getLog().error(e);
@@ -24,8 +24,4 @@ public class GeneralSearchMojo extends AbstractSearchMojo {
 		
 	}
 
-	
-
-	
-	
 }
