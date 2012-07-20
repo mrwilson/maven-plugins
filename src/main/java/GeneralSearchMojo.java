@@ -4,7 +4,7 @@ import java.net.URISyntaxException;
 import uk.co.probablyfine.util.AbstractSearchMojo;
 
 /**
- * Search via general input
+ * General search
  * @goal search
  * @requiresProject false
  */

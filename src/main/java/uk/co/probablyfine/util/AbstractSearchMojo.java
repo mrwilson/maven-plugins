@@ -23,6 +23,11 @@ public abstract class AbstractSearchMojo extends AbstractMojo {
 	
 	protected CentralSearch search = new CentralSearch();
 	
+	/*
+	 * Allow subclasses to set their own query urls
+	 */
+	public abstract void setParameters();
+	
 	public void execute() throws MojoExecutionException, MojoFailureException {
 		
 		getLog().info("Attempting search...");
@@ -32,11 +37,11 @@ public abstract class AbstractSearchMojo extends AbstractMojo {
 		if (this.query.equals(" ")) 
 			getLog().info("No query given, specify query with -Dquery=<querystring>");
 		else 
-			prettyPrint(executeQuery());
+			printToConsole(executeQuery());
 		
 	}
 
-	private void prettyPrint(final Collection<String> results) {
+	private void printToConsole(final Collection<String> results) {
 		
 		if (results.isEmpty())
 			getLog().info("No results found for \""+query+"\"");
@@ -49,8 +54,6 @@ public abstract class AbstractSearchMojo extends AbstractMojo {
 		}
 	}
 
-	public abstract void setParameters();
-	
 	public Collection<String> executeQuery(){
 		try {
 			return this.search.getResult();

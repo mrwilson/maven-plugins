@@ -4,7 +4,7 @@ import java.net.URISyntaxException;
 import uk.co.probablyfine.util.AbstractSearchMojo;
 
 /**
- * Search via classname
+ * Search by classname e.g. Guice
  * @goal classname
  * @requiresProject false
  */

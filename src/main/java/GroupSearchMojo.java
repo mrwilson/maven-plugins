@@ -4,7 +4,7 @@ import java.net.URISyntaxException;
 import uk.co.probablyfine.util.AbstractSearchMojo;
 
 /**
- * Search via groupId
+ * Search by groupId e.g. com.google.inject
  * @goal group
  * @requiresProject false
  */

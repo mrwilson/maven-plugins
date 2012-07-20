@@ -7,7 +7,7 @@
   <url>https://github.com/mrwilson/maven-search-plugin</url>
   
   <name>Maven Search Plugin</name>
-  <description>A plugin for querying Central's repos.</description>
+  <description>A plugin for querying the REST api at http://search.maven.org/</description>
   
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -4,7 +4,7 @@ import java.net.URISyntaxException;
 import uk.co.probablyfine.util.AbstractSearchMojo;
 
 /**
- * Search via artifactId
+ * Search by artifactId e.g. guice
  * @goal artifact
  * @requiresProject false
  */
