@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>uk.co.probablyfine</groupId>
+  <artifactId>maven-search-plugin</artifactId>
+  <version>0.0.1</version>
+  <packaging>maven-plugin</packaging>
+  <url>https://github.com/mrwilson/maven-search-plugin</url>
+  
+  <name>Maven Search Plugin</name>
+  <description>A plugin for querying Central's repos.</description>
+  
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>org.apache.maven</groupId>
+  		<artifactId>maven-plugin-api</artifactId>
+  		<version>3.0.4</version>
+  	</dependency>
+  </dependencies>
+
+</project>
