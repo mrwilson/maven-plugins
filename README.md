@@ -1,8 +1,8 @@
-##Maven Search plugin
+#Maven Search plugin
 
 A simple maven plugin to query the REST api at http://search.maven.org/
 
-#Use
+##Use
  * mvn uk.co.probablyfine:maven-search-plugin:\<goal\> -Dquery="\<query\>"
  * mvn search:<goal> (if uk.co.probablyfine is in settings.xml as below)
 
@@ -10,7 +10,7 @@ A simple maven plugin to query the REST api at http://search.maven.org/
                 <pluginGroup>uk.co.probablyfine</pluginGroup>
         </pluginGroups>
 
-#Goals
+##Goals
  * search:search - general search terms
  * search:artifact - search by artifactId
  * search:group - search by groupId
