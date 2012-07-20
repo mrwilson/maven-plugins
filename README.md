@@ -2,7 +2,7 @@
 
 A simple maven plugin to query the REST api at http://search.maven.org/
 
-        mvn install # to install, does not require a project to use
+    mvn install # to install, does not require a project to use
 
 ##Use
  * mvn uk.co.probablyfine:maven-search-plugin:\<goal\> -Dquery="\<query\>"
