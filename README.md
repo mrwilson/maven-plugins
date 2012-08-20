@@ -10,13 +10,15 @@ In the pom.xml, use
 
       <packaging>tinyjar</packaging>
 
-And under <build><plugins>...
-
-      <plugin>
-        <groupId>uk.co.probablyfine</groupId>
-        <artifactId>tinyjar-maven-plugin</artifactId>
-        <version>0.0.1</version>
-        <extensions>true</extensions>
-      </plugin>
+      <build>
+            <plugins>
+                  <plugin>
+                        <groupId>uk.co.probablyfine</groupId>
+                        <artifactId>tinyjar-maven-plugin</artifactId>
+                        <version>0.0.1</version>
+                        <extensions>true</extensions>
+                  </plugin>
+            </plugins>
+      </build>
 
 The default execution of the packaging is immediately after the standard maven jar plugin.
