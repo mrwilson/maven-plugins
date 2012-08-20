@@ -7,6 +7,10 @@
 	<description>A maven plugin for tinyjar</description>
 	<packaging>maven-plugin</packaging>
 
+	<properties>
+		<tinyjar.version>0.0-SNAPSHOT</tinyjar.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.maven</groupId>
@@ -17,9 +21,14 @@
 		<dependency>
 			<groupId>com.goeswhere.tinyjar</groupId>
 			<artifactId>tinyjar-package</artifactId>
-			<version>0.0-SNAPSHOT</version>
+			<version>${tinyjar.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-project</artifactId>
+			<version>3.0-alpha-2</version>
+		</dependency>
 	</dependencies>
 
 </project>

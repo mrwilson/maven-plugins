@@ -22,7 +22,7 @@
 			<configuration>
 				<phases>
 					<package>
-						uk.co.probablyfine:tinyjar-maven-plugin:package
+						org.apache.maven.plugins:maven-jar-plugin:jar, uk.co.probablyfine:tinyjar-maven-plugin:package
 					</package>
 				</phases>
 			</configuration>
