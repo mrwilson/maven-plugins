@@ -15,3 +15,4 @@ A maven plugin to enforce project characteristics.
 
 ##Goals
  * validate:untracked-files - fail build if there are untracked files
+ * validate:diff-upstream   - fail build if local commits are ahead of upstream
