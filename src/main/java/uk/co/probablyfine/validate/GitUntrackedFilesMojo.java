@@ -11,17 +11,30 @@ import org.eclipse.jgit.api.Status;
 public class GitUntrackedFilesMojo extends AbstractValidationMojo {
 
     public void execute() throws MojoExecutionException, MojoFailureException {
-        final Status call;
+        final Status status;
 
         try {
-            call = new Git(getRepo()).status().call();
+            status = new Git(getRepo()).status().call();
         } catch (Exception e){
             throw new RuntimeException(e);
         }
         
-        if(call.getUntracked().size() > 0) {
-            throw new MojoExecutionException("Untracked files that have no been committed.");
+        int untracked = status.getUntracked().size();
+        int changed   = status.getChanged().size();
+        int modified  = status.getModified().size();
+
+        if(untracked > 0) {
+            throw new MojoExecutionException("Untracked files that have not been committed.");
         }
+
+        if(changed > 0) {
+            throw new MojoExecutionException("Changed files that have not been committed.");
+        }
+
+        if(modified > 0) {
+            throw new MojoExecutionException("Modified files that have not been committed.");
+        }
+
     }
 	
 }
