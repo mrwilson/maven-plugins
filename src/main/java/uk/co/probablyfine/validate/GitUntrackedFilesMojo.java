@@ -7,6 +7,7 @@ import org.eclipse.jgit.api.Status;
 /**
  * @goal untracked-files
  * @requiresProject true
+ * @phase verify
  */
 public class GitUntrackedFilesMojo extends AbstractValidationMojo {
 

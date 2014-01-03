@@ -13,6 +13,7 @@ import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 /**
  * @goal diff-upstream
  * @requiresProject true
+ * @phase verify
  */
 public class GitDiffAgainstUpstreamMojo extends AbstractValidationMojo {
 
