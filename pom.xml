@@ -17,6 +17,8 @@
 
     <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <maven.plugin-api.version>3.0.4</maven.plugin-api.version>
+      <maven.project.version>3.0-alpha-2</maven.project.version>
     </properties>
 
     <build>
@@ -32,5 +34,18 @@
             </plugin>
         </plugins>
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-plugin-api</artifactId>
+            <version>${maven.plugin-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-project</artifactId>
+            <version>${maven.project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
