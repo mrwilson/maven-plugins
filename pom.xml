@@ -11,6 +11,7 @@
 
     <modules>
       <module>search-maven-plugin</module>
+      <module>tinyjar-maven-plugin</module>
     </modules>
 
     <properties>
