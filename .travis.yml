@@ -1,4 +1,4 @@
 language: java
-before_install: cd /tmp && git clone https://github.com/FauxFaux/tinyjar.git && cd tinyjar && mvn install && cd ~
+before_install: git clone https://github.com/FauxFaux/tinyjar.git /tmp && mvn -f /tmp/tinyjar/pom.xml install
 jdk:
   - oraclejdk8
