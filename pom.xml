@@ -9,6 +9,12 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <scm>
+      <url>https://github.com/mrwilson/maven-plugins</url>
+      <connection>scm:git:git://github.com/mrwilson/maven-plugins.git</connection>
+      <developerConnection>scm:git:git@github.com:mrwilson/maven-plugins.git</developerConnection>
+    </scm>
+
     <modules>
       <module>search-maven-plugin</module>
       <module>tinyjar-maven-plugin</module>
