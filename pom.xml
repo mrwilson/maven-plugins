@@ -7,6 +7,22 @@
     <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <name>maven-plugins-parent</name>
+
+    <developers>
+        <developer>
+            <name>Alexander Wilson</name>
+            <email>a.wilson@alumni.warwick.ac.uk</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
     <scm>
       <url>https://github.com/mrwilson/maven-plugins</url>
       <connection>scm:git:git://github.com/mrwilson/maven-plugins.git</connection>
