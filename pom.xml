@@ -10,6 +10,12 @@
 
     <name>maven-plugins-parent</name>
 
+    <description>
+        Parent project for uk.co.probablyfine maven plugins.
+    </description>
+
+    <url>https://github.com/mrwilson/maven-plugins</url>
+
     <developers>
         <developer>
             <name>Alexander Wilson</name>
